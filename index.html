@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Age Calculator">
+    <meta name="author" content="Shikuku Emmanuel Nabwana">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <main class="container">
+        <div class="input">
+            <label for="">Enter your birthdate:</label>
+            <input type="date" name="" id="birthdate">
+        </div>
+        <ul>
+            <li><span id="years"></span> years</li>
+            <li><span id="months"></span> months</li>
+            <li><span id="days"></span> days</li>
+            <li><span id="hours"></span> hours</li>
+            <li><span id="minutes"></span> minutes</li>
+            <li><span id="seconds"></span> seconds</li>
+        </ul>
+        <div class="btns">
+            <button onclick="calculate()">calculate</button>
+            <button onclick="reset()">reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
