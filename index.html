@@ -16,9 +16,11 @@
         body {
             display: grid;
             place-items: center;
+            font-family: Arial, sans-serif;
         }
         h1 {
             text-align: center;
+            margin-bottom: 20px;
         }
         .container {
             background-image: radial-gradient(
@@ -30,7 +32,7 @@
             padding: 20px;
             border-radius: 10px;
             margin: 0 20px;
-            width: 400px;
+            max-width: 400px;
             box-shadow: 5px 15px 30px rgba(128, 128, 128, 0.384);
         }
         label {
@@ -44,9 +46,10 @@
             font-size: large;
             outline: none;
             border-radius: 10px;
+            width: 100%;
         }
         .btns {
-            width: 50%;
+            width: 100%;
             padding: 10px;
             font-size: medium;
             font-weight: bold;
@@ -63,6 +66,7 @@
             border-radius: 10px;
             cursor: pointer;
             text-transform: capitalize;
+            width: 50%;
         }
         .btns button:nth-child(1) {
             background-color: #4CAF50;
@@ -77,9 +81,19 @@
         }
         ul {
             font-size: large;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
         }
         li::marker {
             color: grey;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
